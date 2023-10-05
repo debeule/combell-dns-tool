@@ -1,0 +1,42 @@
+.login{
+    &_leftHalf {
+        background: url('/images/Home_Screen_Fill.png') ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 50%;
+        position: absolute;
+        left: 0px;
+        height: 100vh;
+    }
+    
+    &_rightHalf {
+        width: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 0px;
+        height: 10%;
+        text-align: center;
+    }
+}
+
+.container
+{
+    display:grid;
+}
+
+@media only screen and (max-width: 1200px) {
+    .login_leftHalf {
+        display: none;
+    }
+    .login_rightHalf {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        right: auto;
+        height: 10%;
+        text-align: center;
+    }
+}

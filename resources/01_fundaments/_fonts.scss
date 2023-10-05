@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url('/fonts/verdana/verdana.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Proxima-Nova-Regular';
+    src: url('/fonts/proximanova/Proxima-Nova-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Proxima-Nova-Bold';
+    src: url('/fonts/proximanova/ProximaNova-Bold.woff') format('woff');
+}
+
+h1
+{
+    font-size: 48px;
+    font-family: 'Proxima-Nova-Bold';
+}
+
+body
+{
+    font-size: 18px;
+    font-family: 'Verdana';
+}
+
+dt {
+    font-weight: bold;
+}
+
+.items{
+    font-size: 28px;
+    font-family: 'Proxima-Nova-Regular';
+}
+
+.button_Font{
+    font-size: 18px;
+    font-family: 'Verdana';
+}
+.logout_button_font{
+    font-size: 18px;
+    font-family: 'Verdana';
+}

@@ -1,0 +1,44 @@
+.help_Divide{
+    display: grid;   
+    grid-template-columns: 35% 65%;
+    min-height: calc(100vh - 173px);
+}
+
+.textboxsize{
+    text-align: justify;
+    margin: 0 auto;
+    width: 670px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1330px)  {
+    .help_Divide{
+        display: grid;   
+        grid-template-columns: 1fr;
+        min-height: calc(100vh - 173px);
+    }
+    .textboxsize{
+        text-align: justify;
+        margin: 0 auto;
+        width: 450px;
+    }
+    .center_Help{
+        justify-items: center;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 660px)  {
+    .textboxsize{
+        text-align: justify;
+        margin: 0 auto;
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 460px)  {
+    .textboxsize{
+            width: 300px;
+    }
+}

@@ -1,0 +1,43 @@
+.table_Styling{
+    border-spacing: 15px; 
+    border-collapse: collapse;
+}
+@media only screen and (min-width: 871px)  {
+    .hide_EditMobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 661px) and (max-width: 870px)  {
+    .table_Width{
+        width: 700px;
+    }
+    .hide_EditDesktop{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 660px)  {
+    .table_Width{
+        width: 420px;
+    }
+    .hide_EditDesktop{
+        display: none;
+    }
+}
+@media only screen and (max-width: 430px)  {
+    .table_Width{
+        width: 370px;
+    }
+    .hide_EditDesktop{
+        display: none;
+    }
+}
+@media only screen and (max-width: 380px)  {
+    .table_Width{
+        width: 340px;
+    }
+    .hide_EditDesktop{
+        display: none;
+    }
+}

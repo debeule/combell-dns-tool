@@ -1,0 +1,38 @@
+.shape_Search{
+    width:708px;
+    height: 67px;
+    border-radius: 40px;
+    outline: none;
+    border-width:0px;
+    border:none;
+}
+.has_Search .form_Control {
+    padding-left: 3.5rem;
+}
+
+.has_Search .form_ControlFeedback {
+    position: absolute;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #aaa;
+}
+@media only screen and (max-width: 450px)  {
+    .shape_Search{
+        width:300px;
+        border-radius: 40px;
+    }
+}
+@media only screen and (max-width: 870px)  {
+    .shape_Search{
+        width:400px;
+        border-radius: 40px;
+    }
+}
+@media only screen and (max-width: 390px)  {
+    .shape_Search{
+        width:270px;
+        border-radius: 40px;
+    }
+}

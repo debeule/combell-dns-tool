@@ -1,0 +1,59 @@
+.image_Variant{
+    &_1{
+        max-height: 150px;
+        max-width: 100px;
+    }
+    &_2{
+        max-width: 1024;
+        max-height: 720;
+    }
+    &_3{
+        max-width: 200px;
+        max-height: 200px;
+        width: 100%;
+        height:auto;
+        margin:auto;
+    }
+    &_4{
+        max-width: 666;
+        max-height: 190;
+    }
+    &_5{
+        vertical-align: top;
+        display: inline-block;
+        overflow: hidden;
+    }
+    &_6{
+        max-height: 150px;
+        max-width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_7{
+        
+        width: 670px;
+    }
+}
+
+.image_AlignCenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width: 660px)  {
+    .image_Variant{
+        &_7{
+            
+            width: 450px;
+        }
+    }
+}
+@media only screen and (max-width: 460px)  {
+    .image_Variant{
+        &_7{
+            
+            width: 300px;
+        }
+    }
+}

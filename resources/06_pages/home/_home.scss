@@ -1,0 +1,52 @@
+.alignment
+{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  right: 0px;
+  height: 10%;
+  text-align: center;
+}
+
+.alignment_Vertical{
+  display: flex;
+}
+
+
+@media only screen and (min-width: 661px) and (max-width: 870px)  {
+  .hide_EditDesktop{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 660px)  {
+  .alignment_Vertical
+  {
+    display: block;
+  }
+  .hide_Mail
+  {
+    display: none;
+  }
+  .alignment
+  {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+    height: 10%;
+    text-align: center;
+    display: inherit;
+  }
+  .button_PlacementDelete{
+    margin-left: 0px;
+  }
+  .button_PlacementCreate{
+    margin-bottom: 10px;
+  }
+  .hide_EditDesktop{
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,111 @@
+#nav .active {
+    color: black ;
+    background-color: white;
+}
+
+.nav_Menu{
+    display:flex;
+    justify-content: space-evenly;
+    z-index: 9950;
+}
+
+.nav_Item{
+    list-style: none;
+    margin: 2rem 0 2rem 0;
+    
+    a{
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+}
+
+.hamburger{
+    display: none;
+}
+
+@media(max-width: 1330px){
+    .hamburger{
+        display: inline-block;
+        margin-left: 15px;
+        
+        .bar1, .bar2, .bar3{
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .bar1.active{
+            transform:rotate(45deg)translate(10px, 6px);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .bar2.active{
+            background:transparent;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .bar3.active{
+            transform:rotate(-45deg)translate(10px, -6px);
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    #nav .active {
+        color: white ;
+        background-color: transparent;
+    }
+
+    .nav_Menu{
+        position: absolute;
+        display: none;
+        // right: -100%;
+        top: 150px;
+        flex-direction: column;
+        background-color: rgb(60, 59, 59);
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .nav_Menu.active{
+        animation-duration: 0.4s;
+        animation-name: slidin;
+        animation-fill-mode: forwards;
+        display: grid;
+    }
+
+    .nav_Logout{
+        display: inline;
+    }
+
+    .nav_LogoutButton{
+        display: none;
+    }
+
+    @keyframes slidin{
+    from{
+        right: -100%;
+    }
+    to{
+        right: 0%;
+    }
+    }
+    
+}
+
+@media(min-width: 1330px)
+{
+    .nav_Logout{
+        
+        display: none;
+        
+    }
+
+    .nav_LogoutButton{
+        
+        display: block;
+        
+    }
+}
